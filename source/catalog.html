@@ -1,12 +1,467 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo-one.svg" width="191" height="38" alt="Логотип Кэт Энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">
+          Открыть меню
+        </span></button>
+      <div class="main-nav__center">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item site-list__item-current">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="catalog">
+      <div class="catalog__center">
+        <h1 class="catalog__title">
+          Каталог продукции
+        </h1>
+        <ul class="catalog__list">
+          <li class="catalog__item card-product">
+            <a class="card-product__picture" href="#">
+              <img src="img/chicken-small.jpg" width="68" height="86"
+                alt="Баночка питания для вашего кота с аппетитной курицей">
+            </a>
+            <a class="card-product__name" href="#">
+              Cat Energy PRO 500 г
+            </a>
+            <dl class="card-product__list">
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Масса
+                </dt>
+                <dd class="card-product__size">
+                  500 г
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Вкус
+                </dt>
+                <dd class="card-product__size">
+                  Курица
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Цена
+                </dt>
+                <dd class="card-product__size">
+                  700 р
+                </dd>
+              </div>
+            </dl>
+            <a class="card-product__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item card-product">
+            <a class="card-product__picture" href="#">
+              <img src="img/chicken-big.jpg" width="84" height="101"
+                alt="Большая баночка питания для вашего кота с аппетитной курицей">
+            </a>
+            <a class="card-product__name" href="#">
+              Cat Energy PRO 1000 г
+            </a>
+            <dl class="card-product__list">
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Масса
+                </dt>
+                <dd class="card-product__size">
+                  1000 г
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Вкус
+                </dt>
+                <dd class="card-product__size">
+                  Курица
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Цена
+                </dt>
+                <dd class="card-product__size">
+                  1000 р
+                </dd>
+              </div>
+            </dl>
+            <a class="card-product__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item card-product">
+            <a class="card-product__picture" href="#">
+              <img src="img/fish-small.jpg" width="68" height="86" alt="Баночка питания для вашего кота с нежной рыбой">
+            </a>
+            <a class="card-product__name" href="#">
+              Cat Energy PRO 500 г
+            </a>
+            <dl class="card-product__list">
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Масса
+                </dt>
+                <dd class="card-product__size">
+                  500 г
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Вкус
+                </dt>
+                <dd class="card-product__size">
+                  Рыба
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Цена
+                </dt>
+                <dd class="card-product__size">
+                  700 р
+                </dd>
+              </div>
+            </dl>
+            <a class="card-product__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item card-product">
+            <a class="card-product__picture" href="#">
+              <img src="img/fish-big.jpg" width="84" height="101"
+                alt="Большая баночка питания для вашего кота с нежной рыбой">
+            </a>
+            <a class="card-product__name" href="#">
+              Cat Energy PRO 1000 г
+            </a>
+            <dl class="card-product__list">
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Масса
+                </dt>
+                <dd class="card-product__size">
+                  1000 г
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Вкус
+                </dt>
+                <dd class="card-product__size">
+                  Рыба
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Цена
+                </dt>
+                <dd class="card-product__size">
+                  1000 р
+                </dd>
+              </div>
+            </dl>
+            <a class="card-product__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item card-product">
+            <a class="card-product__picture" href="#">
+              <img src="img/buckwheat-small.jpg" width="68" height="86" alt="Баночка питания для вашего кота с гречкой">
+            </a>
+            <a class="card-product__name" href="#">
+              Cat Energy SLIM 500 г
+            </a>
+            <dl class="card-product__list">
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Масса
+                </dt>
+                <dd class="card-product__size">
+                  500 г
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Вкус
+                </dt>
+                <dd class="card-product__size">
+                  Гречка
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Цена
+                </dt>
+                <dd class="card-product__size">
+                  400 р
+                </dd>
+              </div>
+            </dl>
+            <a class="card-product__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item card-product">
+            <a class="card-product__picture" href="#">
+              <img src="img/buckwheat-big.jpg" width="84" height="101"
+                alt="Большая баночка питания для вашего кота с гречкой">
+            </a>
+            <a class="card-product__name" href="#">
+              Cat Energy SLIM 1000 г
+            </a>
+            <dl class="card-product__list">
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Масса
+                </dt>
+                <dd class="card-product__size">
+                  1000 г
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Вкус
+                </dt>
+                <dd class="card-product__size">
+                  Гречка
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Цена
+                </dt>
+                <dd class="card-product__size">
+                  700 р
+                </dd>
+              </div>
+            </dl>
+            <a class="card-product__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="catalog__item card-product">
+            <a class="card-product__picture" href="#">
+              <img src="img/rice-small.jpg" width="68" height="86" alt="Баночка питания для вашего кота с рисом">
+            </a>
+            <a class="card-product__name" href="#">
+              Cat Energy SLIM 500 г
+            </a>
+            <dl class="card-product__list">
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Масса
+                </dt>
+                <dd class="card-product__size">
+                  500 г
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Вкус
+                </dt>
+                <dd class="card-product__size">
+                  Рис
+                </dd>
+              </div>
+              <div class="card-product__item">
+                <dt class="card-product__category">
+                  Цена
+                </dt>
+                <dd class="card-product__size">
+                  500 р
+                </dd>
+              </div>
+            </dl>
+            <a class="card-product__link button" href="#">
+              Заказать
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="show-more">
+      <div class="show-more__center">
+        <h3 class="show-more__title">
+          Показать еще 100500 товаров
+        </h3>
+        <p class="show-more__text">
+          На самом деле вкусов гораздо больше!
+        </p>
+        <a class="show-more__link" href="#">
+          Показать все
+        </a>
+      </div>
+    </section>
+    <section class="additional-goods">
+      <div class="additional-goods__center">
+        <h2 class="additional-goods__title">
+          Дополнительные товары
+        </h2>
+        <ul class="additional-goods__list">
+          <li class="additional-goods__item production">
+            <a class="production__category" href="#">
+              Сахарозаменитель
+            </a>
+            <dl class="production__list">
+              <div class="production__item">
+                <dt class="production__size">
+                  1 упаковка (100 г)
+                </dt>
+                <dd class="production__price">
+                  200 Р.
+                </dd>
+              </div>
+            </dl>
+            <a class="production__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="additional-goods__item production">
+            <a class="production__category" href="#">
+              Питьевая вода
+            </a>
+            <dl class="production__list">
+              <div class="production__item">
+                <dt class="production__size">
+                  5 литров
+                </dt>
+                <dd class="production__price">
+                  50 Р.
+                </dd>
+              </div>
+            </dl>
+            <a class="production__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="additional-goods__item production">
+            <a class="production__category" href="#">
+              Молоко
+            </a>
+            <dl class="production__list">
+              <div class="production__item">
+                <dt class="production__size">
+                  1 литр
+                </dt>
+                <dd class="production__price">
+                  100 Р.
+                </dd>
+              </div>
+            </dl>
+            <a class="production__link button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="additional-goods__item production">
+            <a class="production__category" href="#">
+              Витамины
+            </a>
+            <dl class="production__list">
+              <div class="production__item">
+                <dt class="production__size">
+                  1 упаковка (30 г)
+                </dt>
+                <dd class="production__price">
+                  300 Р.
+                </dd>
+              </div>
+            </dl>
+            <a class="production__link button" href="#">
+              Заказать
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="location">
+      <h2 class="visually-hidden">
+        Мы находимся
+      </h2>
+      <div class="location__center adress">
+        <h3 class="adress__title">
+          Приглашаем к сотрудничеству дилеров!
+        </h3>
+        <p class="adress__card-product">
+          Ул. Большая
+          Конюшенная, д. 19/8
+        </p>
+        <p class="adress__town">
+          Санкт-Петербург
+        </p>
+      </div>
+      <div class="location__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6148000777596!2d30.323760866266774!3d59.938533753279124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627056643356!5m2!1sru!2sru"
+          width="320" height="362"></iframe>"
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__center">
+      <a class="page-footer__logo" href="index.html">
+        <img src="img/logo-inscription.svg" width="128" height="24" alt="Вывеска Кэт энерджи">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              Мы в Вконтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              Мы в Фейсбуке
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              Мы в Инстаграме
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
 </html>
