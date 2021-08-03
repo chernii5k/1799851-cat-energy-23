@@ -23,19 +23,19 @@
 }
 
 .social__link--vkontakte::before{
-  content: url("../../img/icon_vkontakte.png");
+  content: url("../../img/icon_vkontakte.svg");
   height: 16px;
   width: 23px;
 }
 
 .social__link--instagram::before{
-  content: url("../../img/icon_instagram.png");
+  content: url("../../img/icon_instagram.svg");
   height: 16px;
   width: 16px;
 }
 
 .social__link--facebook::before{
-  content: url("../../img/icon_facebook.png");
+  content: url("../../img/icon_facebook.svg");
   height: 22px;
   width: 22px;
 }
@@ -58,4 +58,3 @@
 .copyright__logo{
   padding-bottom: 22px;
 }
-
