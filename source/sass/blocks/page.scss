@@ -1,0 +1,16 @@
+.page{
+  height: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.page-body{
+  max-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: $basic_white;
+  color: $basic_black;
+}
+

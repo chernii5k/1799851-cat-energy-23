@@ -1,0 +1,54 @@
+.show-more{
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $special_grey2;
+}
+
+.show-more__title{
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 53px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic_black2;
+}
+
+.show-more__text{
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.show-more__link{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 21px;
+  margin-left: 21px;
+  padding: 10px 94px;
+  color: $special_dark-grey;
+  background-color: $basic_grey;
+}
+
+.show-more__title::before{
+  position: absolute;
+  content: "";
+  width: 30px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 30px;
+  background: url("../../img/plus.png") no-repeat center;
+}
+
+
+
+
+
+
+
+

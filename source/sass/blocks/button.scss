@@ -1,0 +1,19 @@
+.button{
+  display: block;
+  width: 280px;
+  height: 40px;
+  color: $basic_white;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $basic_green;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+}
+
+.button-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
