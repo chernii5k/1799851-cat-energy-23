@@ -1,10 +1,10 @@
-.show-more{
+.show-more {
   margin-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid $special_grey2;
 }
 
-.show-more__title{
+.show-more__title {
   position: relative;
   font-size: 16px;
   line-height: 20px;
@@ -14,7 +14,7 @@
   color: $basic_black2;
 }
 
-.show-more__text{
+.show-more__text {
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
@@ -22,7 +22,7 @@
   margin-top: 8px;
 }
 
-.show-more__link{
+.show-more__link {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -34,7 +34,7 @@
   background-color: $basic_grey;
 }
 
-.show-more__title::before{
+.show-more__title::before {
   position: absolute;
   content: "";
   width: 30px;

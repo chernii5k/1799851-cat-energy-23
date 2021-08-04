@@ -1,21 +1,21 @@
-.cat-data__additionally{
+.cat-data__additionally {
   margin-left: 20px;
 }
 
-.extra__content{
+.extra__content {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.extra__title{
+.extra__title {
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 34px;
   color: $basic_black;
 }
 
-.extra__item label{
+.extra__item label {
   margin-left: 16px;
   font-size: 16px;
   line-height: 18px;
@@ -23,6 +23,6 @@
   text-transform: uppercase;
 }
 
-.extra__checkbox:not(:last-child){
+.extra__checkbox:not(:last-child) {
   margin-bottom: 12px;
 }

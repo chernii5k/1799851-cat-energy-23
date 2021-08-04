@@ -1,8 +1,8 @@
-.adress{
+.adress {
   display: flex;
 }
 
-.adress__title{
+.adress__title {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -12,7 +12,7 @@
   padding-bottom: 26px;
 }
 
-.adress__union{
+.adress__union {
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
@@ -20,6 +20,6 @@
   padding-left: 20px;
 }
 
-.location__bg-grey{
+.location__bg-grey {
   background-color: $basic_grey;
 }

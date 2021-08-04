@@ -1,21 +1,20 @@
-.advantages__title{
+.advantages__title {
   font-size: 36px;
   line-height: 40px;
   margin-left: 20px;
   margin-bottom: 40px;
 }
 
-.advantages__item{
+.advantages__item {
   padding-left: 100px;
 }
 
-.advantages__slogan{
-  font-family: "Arial";
+.advantages__slogan {
   font-size: 14px;
   color: $special_dark-grey;
   line-height: 18px;
 }
 
-.advantages__item:not(:last-child){
+.advantages__item:not(:last-child) {
   padding-bottom: 24px;
 }
