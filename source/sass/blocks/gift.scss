@@ -2,12 +2,13 @@
   width: 280px;
   height: 289px;
   margin: 24px 20px 35px 20px;
-  background: url("../../img/gift-photo.jpg") no-repeat center;
+  background: url("../img/gift-photo.jpg") no-repeat center;
   background-size: 280px 289px;
 }
 
 .gift__description {
   position: relative;
+  font-family: Arial, sans-serif;
   padding-top: 186px;
   color: $basic_white;
   font-size: 16px;
@@ -20,5 +21,5 @@
   content: "";
   left: 50%;
   transform: translateX(-50%);
-  background: url("../../img/icon_gift.svg") no-repeat center;
+  background: url("../img/icon_gift.svg") no-repeat center;
 }
