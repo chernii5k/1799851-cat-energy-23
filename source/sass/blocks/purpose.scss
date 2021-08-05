@@ -9,10 +9,16 @@
   border-bottom: 1px solid $special_grey4;
 }
 
+.purpose__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .purpose__item label {
   margin-left: 15px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.13;
   color: $special_dark-grey-2;
   text-transform: uppercase;
 }

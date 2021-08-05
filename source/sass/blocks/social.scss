@@ -1,0 +1,27 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__link--vkontakte::before {
+  content: url("../img/icon_vkontakte.svg");
+  height: 16px;
+  width: 23px;
+}
+
+.social__link--instagram::before {
+  content: url("../img/icon_instagram.svg");
+  height: 16px;
+  width: 16px;
+}
+
+.social__link--facebook::before {
+  content: url("../img/icon_facebook.svg");
+  height: 22px;
+  width: 22px;
+}

@@ -1,11 +1,10 @@
 // Global
 
+@import "global/variable.scss";
 @import "global/fonts.scss";
 
 // Blocks
 
-@import "blocks/nullstype.scss";
-@import "blocks/colors.scss";
 @import "blocks/button.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
@@ -30,3 +29,8 @@
 @import "blocks/comment.scss";
 @import "blocks/extra.scss";
 @import "blocks/request.scss";
+@import "blocks/production.scss";
+@import "blocks/card-product.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/adress.scss";

@@ -1,3 +1,9 @@
+.selection-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .selection-list__item {
   width: 280px;
   height: 266px;
@@ -7,16 +13,17 @@
 }
 
 .selection-list__title {
+  margin: 0;
   font-size: 25px;
-  line-height: 37px;
+  line-height: 1.54;
   padding-top: 30px;
   padding-left: 91px;
 }
 
 .selection-list__description {
+  margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   padding-left: 20px;
   padding-top: 29px;
   color: $special_dark-grey;
@@ -26,7 +33,7 @@
   display: block;
   color: $basic_black;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   padding-left: 19px;
   padding-top: 42px;
   text-transform: uppercase;

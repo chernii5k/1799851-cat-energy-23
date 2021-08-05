@@ -4,22 +4,29 @@
 }
 
 .comment__title {
+  margin: 0;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 1.1;
   color: $basic_black;
   margin-top: 23.57px;
+  margin-bottom: 38px;
 }
 
 .comment__desc {
   width: 280px;
   height: 150px;
   padding: 0;
-  margin-top: 38px;
 }
 
 .comment__desc[placeholder] {
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.13;
   color: $special_dark-grey;
   text-transform: uppercase;
+  padding-left: 15px;
+  padding-right: 12px;
+  padding-top: 9px;
 }

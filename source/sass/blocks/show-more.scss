@@ -5,9 +5,10 @@
 }
 
 .show-more__title {
+  margin: 0;
   position: relative;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   padding-top: 53px;
   text-transform: uppercase;
   text-align: center;
@@ -15,9 +16,11 @@
 }
 
 .show-more__text {
+  margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   color: $special_dark-grey;
   text-align: center;
   margin-top: 8px;
@@ -28,6 +31,8 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  font-size: 16px;
+  line-height: 1.25;
   margin-top: 21px;
   margin-left: 21px;
   padding: 10px 94px;
@@ -43,5 +48,5 @@
   top: 0;
   transform: translateX(-50%);
   height: 30px;
-  background: url("img/plus.png") no-repeat center;
+  background: url("../img/plus.png") no-repeat center;
 }
