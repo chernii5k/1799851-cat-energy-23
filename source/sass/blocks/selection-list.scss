@@ -1,0 +1,43 @@
+.selection-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.selection-list__item {
+  width: 280px;
+  height: 266px;
+  margin: 20px;
+  background-color: $basic_grey;
+  text-align: left;
+}
+
+.selection-list__title {
+  margin: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: 1.54;
+  font-weight: 400;
+  padding-top: 30px;
+  padding-left: 91px;
+}
+
+.selection-list__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  padding-left: 20px;
+  padding-top: 29px;
+  color: $special_dark-grey;
+}
+
+.selection-list__link {
+  display: block;
+  color: $basic_black;
+  font-size: 16px;
+  line-height: 1;
+  padding-left: 19px;
+  padding-top: 42px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

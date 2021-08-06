@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -27,7 +28,7 @@
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item site-list__item-current">
+          <li class="site-list__item site-list__item--current">
             <a href="#">
               Подбор программы
             </a>
@@ -44,7 +45,7 @@
             Подбор программы
           </h1>
           <p class="cat-data__subtitle">
-            Заполните анкету, и мы подберем программу питания для вашего кота
+            Заполните анкету, и мы подберем<br> программу питания для вашего кота
           </p>
         </header>
         <div class="cat-data__entry-field parameters purpose">
@@ -54,19 +55,19 @@
             </legend>
             <ul class="parameters__list">
               <li class="parameters__item">
-                <label for="cat-name">
+                <label class="parameters__category" for="cat-name">
                   Имя:*
                 </label>
                 <input class="parameters__name" name="parameters-name" type="text" id="cat-name" placeholder="Барсик">
               </li>
               <li class="parameters__item">
-                <label for="cat-weight">
+                <label class="parameters__category" for="cat-weight">
                   Вес (кг):*
                 </label>
                 <input class="parameters__weight" name="parameters-weight" type="number" id="cat-weight" placeholder="7">
               </li>
               <li class="parameters__item">
-                <label for="cat-age">
+                <label class="parameters__category" for="cat-age">
                   Возраст (лет):
                 </label>
                 <input class="parameters__age" name="parameters-age" type="number" id="cat-age" placeholder="7">
@@ -79,7 +80,7 @@
             </legend>
             <ul class="purpose__list">
               <li class="purpose__item">
-                <input class="purpose__radio" type="radio" name="purpose" id="slimming" value="slimming">
+                <input class="purpose__radio" type="radio" name="purpose" id="slimming" value="slimming" checked>
                 <label for="slimming">
                   Похудение
                 </label>
@@ -102,7 +103,7 @@
       </div>
       <div class="cat-data__contact-details owner-data">
         <h2 class="owner-data__title">
-          Контактные данные (владельца кота)
+          Контактные данные<br> (владельца кота)
         </h2>
         <div class="owner-data__center">
           <ul class="owner-data__list">
@@ -123,10 +124,10 @@
         </div>
       </div>
       <div class="cat-data__comment comment">
-        <label for="comment">
+        <h2 class="comment__title">
           Комментарий
-        </label>
-        <input class="comment__desc" type="text" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота">
+        </h2>
+        <textarea class="comment__desc" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
       <div class="cat-data__additionally extra">
         <fieldset class="extra__content">
@@ -159,37 +160,42 @@
               </label>
             </li>
           </ul>
+          <div class="extra__request-send request">
+            <button class="button request__button" type="submit">
+              Отправить заявку
+            </button>
+            <small class="request__necessarily">
+              * — Обязательные поля
+            </small>
+          </div>
         </fieldset>
       </div>
-      <div class="cat-data__request-send request">
-        <button class="button" type="submit">
-          Отправить заявку
-        </button>
-        <small class="request__necessarily">
-          * — Обязательные поля
-        </small>
-      </div>
+
     </form>
-    <section class="location">
+    <section class="location location__bg-grey">
       <h2 class="visually-hidden">
         Мы находимся
       </h2>
       <div class="location__center adress">
-        <h3 class="adress__title">
-          Приглашаем к сотрудничеству дилеров!
-        </h3>
-        <p class="adress__description">
-          Ул. Большая
-          Конюшенная, д. 19/8
-        </p>
-        <p class="adress__town">
-          Санкт-Петербург
-        </p>
+        <div class="adress">
+          <h3 class="adress__title">
+            Приглашаем<br> к сотрудничеству<br> дилеров!
+          </h3>
+          <div class="adress__union">
+            <p class="adress__description">
+              Ул. Большая<br>
+              Конюшенная, д. 19/8
+            </p>
+            <p class="adress__town">
+              Санкт-Петербург
+            </p>
+          </div>
+        </div>
       </div>
       <div class="location__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6148000777596!2d30.323760866266774!3d59.938533753279124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627056643356!5m2!1sru!2sru"
-          width="320" height="362"></iframe>"
+          width="320" height="362"></iframe>
       </div>
     </section>
   </main>
@@ -202,17 +208,17 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              Мы в Вконтакте
+              <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              Мы в Фейсбуке
+              <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              Мы в Инстаграме
+              <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
         </ul>

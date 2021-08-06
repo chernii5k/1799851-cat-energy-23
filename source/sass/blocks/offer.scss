@@ -1,0 +1,39 @@
+.offer {
+  background-image: url("../img/index-background-desktop.jpg");
+  background-size: 320px 302px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.offer__header {
+  text-align: center;
+}
+
+.offer__title {
+  margin: 0;
+  color: $basic_white;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  padding-top: 27px;
+}
+
+.offer__slogan {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+  color: $basic_white;
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+.offer__header img {
+  margin-top: 29px;
+  margin-left: 20px;
+}
+
+.offer__link {
+  margin-left: 20px;
+  margin-top: 3px;
+  font-weight: 400;
+}

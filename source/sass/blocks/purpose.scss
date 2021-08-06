@@ -1,0 +1,28 @@
+.purpose__content {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  padding-left: 20px;
+  border-top: 1px solid $special_grey4;
+  border-bottom: 1px solid $special_grey4;
+}
+
+.purpose__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.purpose__item label {
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 1.13;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}
+
+.purpose__item:not(:last-child) {
+  margin-bottom: 24px;
+}

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -17,7 +18,7 @@
         </span></button>
       <div class="main-nav__center">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item-current">
+          <li class="site-list__item site-list__item--current">
             <a href="#">
               Главная
             </a>
@@ -46,9 +47,9 @@
           <p class="offer__slogan">
             Занялся собой? Займись котом!
           </p>
-          <img src="img/offer-image-mobile.jpg" width="280" height="270"
+          <img src="img/offer-image-mobile.png" width="280" height="270"
             alt="Баночка питания с нежной курицей для вашего кота!">
-          <a class="button" href="form.html">
+          <a class="button button-link offer__link" href="form.html">
             Подобрать программу
           </a>
         </header>
@@ -65,10 +66,10 @@
               Похудение
             </h3>
             <p class="selection-list__description">
-              Ваш кот весит больше собаки и почти утратил способность лазить
-              по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+              Ваш кот весит больше собаки и<br> почти утратил способность лазить<br>
+              по деревьям? Пора на диету! Cat<br> Energy Slim поможет вашему<br> питомцу сбросить лишний вес.
             </p>
-            <a class="catalog" href="#">
+            <a class="selection-list__link" href="#">
               Каталог Slim
             </a>
           </li>
@@ -77,10 +78,10 @@
               Набор массы
             </h3>
             <p class="selection-list__description">
-              Заработать авторитет среди дворовых котов и даже собак? Серия
-              Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              Заработать авторитет среди<br> дворовых котов и даже собак?<br> Серия
+              Cat Energy Pro поможет<br> вашему коту нарастить<br> необходимые мышцы!
             </p>
-            <a class="catalog" href="#">
+            <a class="selection-list__link" href="#">
               Каталог Pro
             </a>
           </li>
@@ -94,23 +95,23 @@
         </h3>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--leaflet">
-            <p>
-              Функциональное питание содержит только полезные питательные вещества.
+            <p class="advantages__slogan">
+              Функциональное питание<br> содержит только полезные<br> питательные вещества.
             </p>
           </li>
           <li class="advantages__item advantages__item--boiling-water">
-            <p>
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            <p class="advantages__slogan">
+              Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.
             </p>
           </li>
           <li class="advantages__item advantages__item--cutlery">
-            <p>
-              Замените один-два приема обычной еды на наше функциональное питание.
+            <p class="advantages__slogan">
+              Замените один-два приема<br> обычной еды на наше<br> функциональное питание.
             </p>
           </li>
           <li class="advantages__item advantages__item--time">
-            <p>
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <p class="advantages__slogan">
+              Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!
             </p>
           </li>
         </ul>
@@ -122,8 +123,9 @@
           Живой пример
         </h2>
         <p class="live-example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          Борис сбросил 5 кг за 2 месяца, просто<br> заменив свой обычный корм на Cat Energy<br> Slim. Отличный
+          результат без
+          изнуряющих<br> тренировок! При этом он не менял своих<br> привычек и по-прежнему спит по 16 часов<br> в день.
         </p>
         <dl class="live-example__list">
           <div class="live-example__item">
@@ -131,7 +133,7 @@
               5кг
             </dt>
             <dd class="live-example__description">
-              снижение веса
+              снижение<br> веса
             </dd>
           </div>
           <div class="live-example__item">
@@ -139,14 +141,14 @@
               60 дней
             </dt>
             <dd class="live-example__description">
-              затрачено времени
+              затрачено<br> времени
             </dd>
           </div>
         </dl>
         <p class="live-example__expenses">
           Затраты на питание: 15 000 РУБ.
         </p>
-        <img src="img/before-cat.jpg" width="311" height="232" alt="Красивый, но толстый кот">
+        <img src="img/before-cat.png" width="311" height="232" alt="Красивый, но толстый кот">
         <div class="before-after">
           <label class="before-after__label" for="fatcat">
             Было
@@ -163,21 +165,25 @@
         Мы находимся
       </h2>
       <div class="location__center adress">
-        <h3 class="adress__title">
-          Приглашаем к сотрудничеству дилеров!
-        </h3>
-        <p class="adress__description">
-          Ул. Большая
-          Конюшенная, д. 19/8
-        </p>
-        <p class="adress__town">
-          Санкт-Петербург
-        </p>
+        <div class="adress">
+          <h3 class="adress__title">
+            Приглашаем<br> к сотрудничеству<br> дилеров!
+          </h3>
+          <div class="adress__union">
+            <p class="adress__description">
+              Ул. Большая<br>
+              Конюшенная, д. 19/8
+            </p>
+            <p class="adress__town">
+              Санкт-Петербург
+            </p>
+          </div>
+        </div>
       </div>
       <div class="location__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6148000777596!2d30.323760866266774!3d59.938533753279124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627056643356!5m2!1sru!2sru"
-          width="320" height="362"></iframe>"
+          width="320" height="362"></iframe>
       </div>
     </section>
   </main>
@@ -190,17 +196,17 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              Мы в Вконтакте
+              <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              Мы в Фейсбуке
+              <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              Мы в Инстаграме
+              <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
         </ul>

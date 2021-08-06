@@ -1,0 +1,52 @@
+.parameters__content {
+  margin: 0;
+  margin-top: 39px;
+  margin-left: 20px;
+  margin-bottom: 24px;
+  padding: 0;
+  border: none;
+}
+
+.parameters__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.parameters__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.parameters__category {
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  margin-right: 13px;
+}
+
+.parameters__item input {
+  padding: 0;
+}
+
+.parameters__item input[placeholder] {
+  font-size: 16px;
+  line-height: 1.13;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+}
+
+.parameters__name {
+  width: 229px;
+  height: 45px;
+}
+
+.parameters__weight {
+  width: 204px;
+  height: 45px;
+}
+
+.parameters__age {
+  width: 172px;
+  height: 45px;
+}
