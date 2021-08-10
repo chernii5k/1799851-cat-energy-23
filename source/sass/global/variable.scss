@@ -1,3 +1,5 @@
+// Colors
+
 $basic_green:#68b738;
 $basic_grey:#f2f2f2;
 $special_grey2:#ebebeb;
@@ -12,3 +14,23 @@ $basic_green-2:#5eaa2f;
 $basic_white:#ffffff;
 $basic_black:#000000;
 $basic_black2:#111111;
+
+// Viewport
+
+$tablet-width: 768px;
+$desktop-width: 1260px;
+$mobile-width-only: 767px;
+
+// Mixin
+
+@mixin container {
+  min-width: 768px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin container-desktop {
+  min-width: 1260px;
+  box-sizing: border-box;
+  margin: 0 110px;
+}

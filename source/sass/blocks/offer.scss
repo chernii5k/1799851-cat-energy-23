@@ -3,10 +3,28 @@
   background-size: 320px 302px;
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 117px;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    padding-top: 110px;
+    margin-bottom: 257px;
+  }
 }
 
 .offer__header {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .offer__title {
@@ -16,6 +34,21 @@
   line-height: 1;
   font-weight: 400;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    color: $basic_black;
+    text-align: left;
+    margin-bottom: 41px;
+    width: 65%;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
+    margin-bottom: 40px;
+  }
 }
 
 .offer__slogan {
@@ -25,15 +58,58 @@
   color: $basic_white;
   font-weight: 400;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    color: $basic_black;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0;
+  }
 }
 
 .offer__header img {
   margin-top: 29px;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 0;
+    order: 4;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -140px;
+    left: 63%;
+    z-index: 0;
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .offer__link {
   margin-left: 20px;
   margin-top: 3px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 49px;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 1;
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+  }
 }

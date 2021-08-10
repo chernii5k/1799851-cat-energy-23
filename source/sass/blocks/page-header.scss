@@ -2,4 +2,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 53px;
+    padding: 24px 31px 0 29px;
+    @include container;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1260px;
+    padding: 53px 110px 0;
+  }
+}
+
+.page-header__logo {
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 174px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 202px;
+    height: auto;
+  }
 }

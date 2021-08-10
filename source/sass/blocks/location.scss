@@ -1,3 +1,25 @@
+@media (min-width: $tablet-width) {
+  .location {
+    @include container;
+  }
+}
+
 .location__bg-grey {
   background-color: $basic_grey;
 }
+
+@media (min-width: $tablet-width) {
+  .location__map iframe {
+    height: 400px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__map iframe {
+    position: relative;
+    min-width: 1260px;
+    height: 400px;
+  }
+}
+
