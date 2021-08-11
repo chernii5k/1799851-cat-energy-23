@@ -4,10 +4,13 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
     width: 62%;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 53px;
     width: 45%;
   }
 }

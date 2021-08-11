@@ -1,5 +1,6 @@
 .live-example {
   background-color: $special_dark-grey3;
+  min-width: 320px;
 
   @media (min-width:$tablet-width) {
     background-color: $basic_white;
@@ -34,11 +35,12 @@
 }
 
 .live-example__center {
+  width: auto;
   margin-top: 42px;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    width: 768px;
+    width: auto;
     margin: 0;
     padding: 43px 30px 0;
   }
