@@ -4,7 +4,9 @@
 
 @media (min-width: $tablet-width) {
   .location {
-    @include container;
+    min-width: 1260px;
+    box-sizing: border-box;
+    margin: 0 110px;
   }
 }
 
@@ -25,4 +27,3 @@
     height: 400px;
   }
 }
-
