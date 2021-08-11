@@ -2,7 +2,7 @@
   background-color: $special_dark-grey3;
   min-width: 320px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     background-color: $basic_white;
   }
 }
@@ -185,7 +185,6 @@
     width: 690px;
     height: auto;
   }
-
 }
 
 .before-after {
