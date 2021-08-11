@@ -1,4 +1,4 @@
-.adress {
+.address__center {
   display: flex;
 
   @media (min-width: $tablet-width) {
@@ -12,15 +12,14 @@
     content: "";
     width: 570px;
     height: 201px;
-    left: 35%;
-    transform: translateX(-50%);
-    top: 1205px;
-    background-color: $basic_white;
+    left: 8%;
+    top: 20%;
     z-index: 1;
+    background-color: $basic_white;
   }
 }
 
-.adress__title {
+.address__title {
   margin: 0;
   font-size: 16px;
   line-height: 1.13;
@@ -43,7 +42,7 @@
   }
 }
 
-.adress__union {
+.address__union {
   color: $special_dark-grey;
   padding-top: 28px;
   padding-left: 20px;
@@ -59,7 +58,7 @@
   }
 }
 
-.adress__description {
+.address__description {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -72,7 +71,7 @@
   }
 }
 
-.adress__town {
+.address__town {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;

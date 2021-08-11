@@ -190,6 +190,12 @@
   padding-top: 23px;
   text-align: center;
   padding-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 81px;
+    margin-top: 33px;
+  }
 }
 
 .before-after__label {
