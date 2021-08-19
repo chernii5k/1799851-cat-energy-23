@@ -23,6 +23,11 @@
   text-transform: uppercase;
   color: $special_dark-grey;
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.45;
+  }
 }
 
 .parameters__item input {
@@ -34,6 +39,11 @@
   line-height: 1.13;
   color: $special_dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.45;
+  }
 }
 
 .parameters__name {

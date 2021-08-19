@@ -7,6 +7,15 @@
   font-weight: 400;
   color: $basic_black;
   border-top: 1px solid $special_grey4;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .cat-data__subtitle {
@@ -15,9 +24,23 @@
   padding-top: 37px;
   padding-left: 20px;
   color: $basic_black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .cat-data__contact-details {
   margin-left: 20px;
   margin-top: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-data__entry-field {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

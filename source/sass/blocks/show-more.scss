@@ -1,5 +1,5 @@
 .show-more__center {
-  margin: 0 20px;
+  margin: 0 auto;
 }
 
 .show-more__title {
@@ -12,6 +12,12 @@
   text-transform: uppercase;
   text-align: center;
   color: $basic_black2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.1;
+    padding-top: 161px;
+  }
 }
 
 .show-more__text {
@@ -23,6 +29,13 @@
   color: $special_dark-grey;
   text-align: center;
   margin-top: 8px;
+
+  @media (min-height: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.12;
+    padding-top: 23px;
+    margin: 0;
+  }
 }
 
 .show-more__link {
@@ -36,6 +49,15 @@
   padding: 10px 94px;
   color: $special_dark-grey;
   background-color: $basic_grey;
+
+  @media (min-height: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-height: $desktop-width) {
+    width: 169px;
+
+  }
 }
 
 .show-more__title::before {

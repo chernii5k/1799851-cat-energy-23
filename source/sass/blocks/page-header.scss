@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 320px;
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header::after {
+  .page-header--index::after {
     content: "";
     position: absolute;
     right: 0;
@@ -39,14 +39,18 @@
   padding: 10px 20px 17px 20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
+    width: 708px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
     margin: 24px 29px 62px 30px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    min-width: 1220px;
+    align-items: center;
     justify-content: space-between;
   }
 }

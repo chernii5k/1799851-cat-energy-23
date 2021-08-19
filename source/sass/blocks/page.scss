@@ -4,6 +4,10 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
+  box-sizing: border-box;
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 }
 
 .page-body {

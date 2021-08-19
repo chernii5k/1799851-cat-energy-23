@@ -4,6 +4,11 @@
   line-height: 1.1;
   font-weight: 400;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
 }
 
 .owner-data__center {
@@ -14,6 +19,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .owner-data__item label {
@@ -21,6 +32,11 @@
   line-height: 1.13;
   color: $special_dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.45;
+  }
 }
 
 .owner-data__item input[placeholder] {
@@ -28,6 +44,11 @@
   line-height: 1.13;
   color: $special_dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.45;
+  }
 }
 
 .owner-data__input {
