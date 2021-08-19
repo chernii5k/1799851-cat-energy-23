@@ -74,12 +74,17 @@
     justify-content: center;
     align-items: center;
     border: none;
-    background-color: $basic_grey;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    height: 511px;
+    height: 431px;
+  }
+}
+
+.catalog__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    background-color: $basic_grey;
   }
 }
 
