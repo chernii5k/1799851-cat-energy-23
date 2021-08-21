@@ -1,8 +1,9 @@
 .offer {
-  background-image: url("../img/index-background-desktop.jpg");
-  background-size: 320px 302px;
+  background-image: url("../img/index-background-desktop.jpg"), linear-gradient(#64A63B, #64A73D);
+  background-size: 320px 302px, 767px 302px;
   background-position: 0 0;
   background-repeat: no-repeat;
+  outline: 2px solid blue;
 
   @media (min-width: $tablet-width) {
     position: relative;

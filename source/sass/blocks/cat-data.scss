@@ -9,12 +9,16 @@
   border-top: 1px solid $special_grey4;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     font-size: 60px;
     line-height: 1;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    border: none;
+    padding: 0;
+    padding-top: 73px;
+    padding-bottom: 56px;
   }
 }
 
@@ -27,20 +31,37 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 66px;
   }
 }
 
 .cat-data__contact-details {
   margin-left: 20px;
   margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .cat-data__entry-field {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data__entry-field {
+    flex-direction: row;
   }
 }

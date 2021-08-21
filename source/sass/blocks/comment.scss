@@ -1,6 +1,15 @@
 .cat-data__comment {
   margin-left: 20px;
   margin-bottom: 22.75px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+  }
 }
 
 .comment__title {
@@ -13,8 +22,10 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 36px;
     line-height: 1;
+    margin-bottom: 76px;
   }
 }
 
@@ -22,6 +33,15 @@
   width: 280px;
   height: 150px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+    height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .comment__desc[placeholder] {

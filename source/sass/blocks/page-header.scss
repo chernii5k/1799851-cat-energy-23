@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 280px;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -36,6 +36,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  width: 280px;
   padding: 10px 20px 17px 20px;
 
   @media (min-width: $tablet-width) {

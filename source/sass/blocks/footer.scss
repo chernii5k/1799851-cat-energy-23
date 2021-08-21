@@ -16,17 +16,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    min-width: 1260px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 0 20px;
+    min-width: 1220px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__center {
+  .page-footer__bg {
     background-color: $basic_grey;
-    margin: 0 auto;
   }
 }
 

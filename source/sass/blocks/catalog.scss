@@ -31,16 +31,15 @@
     margin: 0;
     padding: 0;
     margin-bottom: 82px;
-    margin-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 30px;
     margin-top: 74px;
   }
 }
 
 .catalog__list {
+  padding: 0;
   margin: 0;
   list-style: none;
 
@@ -89,7 +88,6 @@
 }
 
 .catalog__item:last-child {
-  display: block;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {

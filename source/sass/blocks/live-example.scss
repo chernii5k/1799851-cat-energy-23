@@ -35,11 +35,9 @@
 }
 
 .live-example__center {
-  width: auto;
   margin-top: 42px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
     margin: 0;
     padding: 43px 30px 0;
   }

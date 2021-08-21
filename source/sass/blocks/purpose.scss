@@ -1,5 +1,5 @@
 .purpose__content {
-  border: 0;
+  border: none;
   margin: 0;
   padding: 0;
   padding-top: 22px;
@@ -7,6 +7,17 @@
   padding-left: 20px;
   border-top: 1px solid $special_grey4;
   border-bottom: 1px solid $special_grey4;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special_grey5;
+    width: 630px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-left: 60px;
+  }
 }
 
 .purpose__list {
