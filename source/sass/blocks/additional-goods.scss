@@ -39,6 +39,10 @@
     margin-left: 47px;
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .additional-goods__title::after {
@@ -67,6 +71,11 @@
     margin: 0;
     border: 1px solid $special_grey;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+  }
 }
 
 .additional-goods__item {
@@ -82,5 +91,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
   }
 }
