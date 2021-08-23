@@ -8,7 +8,6 @@
   @media (min-width: $tablet-width) {
     position: relative;
     margin-bottom: 10px;
-    padding-left: 117px;
     background-image: none;
   }
 }
@@ -35,6 +34,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 111px;
     max-width: 420px;
+    padding-left: 80px;
     margin-bottom: 40px;
   }
 }
@@ -55,6 +55,10 @@
     text-transform: uppercase;
     text-align: left;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -100,5 +104,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 52px;
+    margin-left: 80px;
   }
 }
