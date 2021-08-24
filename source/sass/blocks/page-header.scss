@@ -37,15 +37,10 @@
   padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px 29px 62px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    align-items: center;
-    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 62px;
   }
 }
 
