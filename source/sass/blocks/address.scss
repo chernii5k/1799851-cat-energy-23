@@ -1,0 +1,86 @@
+.address__center {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+    align-items: center;
+    min-height: 201px;
+    background-color: $basic_grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 570px;
+    height: 201px;
+    left: 8%;
+    top: 20%;
+    z-index: 1;
+    background-color: $basic_white;
+  }
+}
+
+.address__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.13;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basic_black2;
+  padding-left: 20px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.05;
+    margin-right: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.address__union {
+  color: $special_dark-grey;
+  padding-top: 28px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    text-align: right;
+    width: 159px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.address__description {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.address__town {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

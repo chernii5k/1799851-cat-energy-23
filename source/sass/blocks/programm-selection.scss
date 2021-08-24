@@ -1,3 +1,15 @@
 .programm-selection {
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 550px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 267px;
+    padding: 0;
+    margin-bottom: 71px;
+  }
 }

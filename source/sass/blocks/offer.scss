@@ -1,21 +1,42 @@
 .offer {
-  background-image: url("../img/index-background-desktop.jpg");
-  background-size: 320px 302px;
+  background-image: url("../img/index-background-desktop.jpg"), linear-gradient(#64a63b, #64a73d);
+  background-size: 320px 302px, 767px 302px;
   background-position: 0 0;
   background-repeat: no-repeat;
-}
+  width: 100%;
 
-.offer__header {
-  text-align: center;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 10px;
+    background-image: none;
+  }
 }
 
 .offer__title {
   margin: 0;
   color: $basic_white;
   font-size: 36px;
+  text-align: center;
   line-height: 1;
   font-weight: 400;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    color: $basic_black;
+    text-align: left;
+    margin-bottom: 41px;
+    width: 414px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 111px;
+    max-width: 420px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+  }
 }
 
 .offer__slogan {
@@ -24,16 +45,63 @@
   line-height: 1;
   color: $basic_white;
   font-weight: 400;
+  text-align: center;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    color: $basic_black;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
-.offer__header img {
+.offer img {
   margin-top: 29px;
-  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 0;
+    order: 4;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 70%;
+    top: 10%;
+    z-index: 0;
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .offer__link {
-  margin-left: 20px;
   margin-top: 3px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 49px;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 1;
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+    margin-left: 80px;
+  }
 }

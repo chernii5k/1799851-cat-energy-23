@@ -5,16 +5,37 @@
   margin-bottom: 24px;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .parameters__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .parameters__item:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .parameters__category {
@@ -23,6 +44,15 @@
   text-transform: uppercase;
   color: $special_dark-grey;
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .parameters__item input {
@@ -34,19 +64,84 @@
   line-height: 1.13;
   color: $special_dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.45;
+  }
 }
 
 .parameters__name {
   width: 229px;
-  height: 45px;
+  border: 1px solid $special_grey5;
+
+  @media (min-width: $tablet-width) {
+    width: 567px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 506px;
+  }
 }
 
 .parameters__weight {
   width: 204px;
-  height: 45px;
+  border: 1px solid $special_grey5;
+
+  @media (min-width: $tablet-width) {
+    width: 536px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
 }
 
 .parameters__age {
   width: 172px;
-  height: 45px;
+  border: 1px solid $special_grey5;
+
+  @media (min-width: $tablet-width) {
+    width: 497px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.parameters__name[placeholder] {
+  padding: 13px 165px 14px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 487px 11px 18.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 424px 11px 20px;
+  }
+}
+
+.parameters__weight[placeholder] {
+  padding: 13px 181px 14px 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 181px 14.5px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 448px 11px 19px;
+  }
+}
+
+.parameters__age[placeholder] {
+  padding: 13px 149px 14px 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 149px 14px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 411px 11px 17px;
+  }
 }
