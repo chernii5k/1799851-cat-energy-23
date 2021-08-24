@@ -1,14 +1,8 @@
 .live-example {
   background-color: $special_dark-grey3;
-  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     background-color: $basic_white;
-    min-width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 1260px;
   }
 }
 
