@@ -31,6 +31,20 @@
   }
 }
 
+.owner-data__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.owner-data__item:first-child {
+  margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .owner-data__item label {
   font-size: 16px;
   line-height: 1.13;
@@ -63,8 +77,6 @@
   margin: 0;
   width: 219px;
   height: 45.15px;
-  margin-left: 11px;
-  margin-bottom: 14.05px;
   border: 1px solid $special_grey;
 
   @media (min-width: $tablet-width) {
