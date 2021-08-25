@@ -1,5 +1,6 @@
 .address__center {
   display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;
@@ -27,7 +28,6 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic_black2;
-  padding-left: 20px;
   padding-top: 28px;
   padding-bottom: 26px;
 
@@ -46,7 +46,6 @@
 .address__union {
   color: $special_dark-grey;
   padding-top: 28px;
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
