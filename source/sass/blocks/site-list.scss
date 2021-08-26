@@ -1,7 +1,12 @@
 .site-list {
+  position: absolute;
+  width: 320px;
+  left: 0;
+  top: 65px;
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -26,7 +31,13 @@
 }
 
 .site-list__item a {
+  position: relative;
+  display: block;
+  background-color: $basic_white;
   font-family: inherit;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid $special_grey6;
   text-decoration: none;
   font-size: 20px;
   line-height: 1;
