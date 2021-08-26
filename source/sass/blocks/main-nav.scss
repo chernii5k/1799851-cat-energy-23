@@ -42,6 +42,10 @@
   cursor: pointer;
   border: none;
 
+  &:active {
+    background-color: $basic_white;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -56,6 +60,10 @@
   height: 2px;
   background-color: $basic_black;
   box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
+
+  &:active {
+    background-color: $basic_white;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
