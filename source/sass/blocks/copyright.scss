@@ -29,12 +29,6 @@
 .copyright__logo {
   padding-bottom: 22px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
-.copyright a {
   &:hover {
     filter: invert(50%) sepia(96%) saturate(315%) hue-rotate(54deg) brightness(103%) contrast(92%);
   }
@@ -42,5 +36,9 @@
   &:active {
     filter: invert(50%) sepia(96%) saturate(315%) hue-rotate(54deg) brightness(103%) contrast(92%);
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
