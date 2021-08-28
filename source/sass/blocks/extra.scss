@@ -98,10 +98,6 @@
   }
 }
 
-.extra__checkbox:not(:last-child) {
-  margin-bottom: 12px;
-}
-
-.extra__checkbox:disabled {
-  color: rgba(0, 0, 0, 0.3);
+.extra__item input:disabled + label {
+  color: rgba(34, 34, 34, 0.3);
 }

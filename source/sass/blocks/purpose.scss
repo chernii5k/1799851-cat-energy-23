@@ -49,6 +49,6 @@
   margin-bottom: 24px;
 }
 
-.purpose__radio:disabled {
+.purpose__item input:hover + label {
   color: rgba(34, 34, 34, 0.3);
 }
