@@ -94,6 +94,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;

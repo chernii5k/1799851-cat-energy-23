@@ -31,3 +31,12 @@
   height: 22px;
   width: 22px;
 }
+
+.social__link:hover {
+  filter: invert(50%) sepia(96%) saturate(315%) hue-rotate(54deg) brightness(103%) contrast(92%);
+}
+
+.social__link:active {
+  filter: invert(50%) sepia(96%) saturate(315%) hue-rotate(54deg) brightness(103%) contrast(92%);
+  opacity: 0.3;
+}

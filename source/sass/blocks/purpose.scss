@@ -48,3 +48,7 @@
 .purpose__item:not(:last-child) {
   margin-bottom: 24px;
 }
+
+.purpose__radio:disabled {
+  color: rgba(34, 34, 34, 0.3);
+}

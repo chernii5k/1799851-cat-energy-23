@@ -101,3 +101,7 @@
 .extra__checkbox:not(:last-child) {
   margin-bottom: 12px;
 }
+
+.extra__checkbox:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
