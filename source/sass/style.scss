@@ -2,6 +2,7 @@
 
 @import "global/variable.scss";
 @import "global/fonts.scss";
+@import "global/global.scss";
 
 // Blocks
 
@@ -18,7 +19,7 @@
 @import "blocks/advantages.scss";
 @import "blocks/live-example.scss";
 @import "blocks/location.scss";
-@import "blocks/footer.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/catalog.scss";
 @import "blocks/show-more.scss";
 @import "blocks/additional-goods.scss";

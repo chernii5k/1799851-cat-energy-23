@@ -67,6 +67,14 @@
 
 .parameters__item input {
   padding: 0;
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
 }
 
 .parameters__item input[placeholder] {

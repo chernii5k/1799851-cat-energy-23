@@ -69,8 +69,14 @@
   }
 }
 
-.owner-data__input {
-  padding: 0;
+.owner-data input {
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
 }
 
 .owner-data__email {

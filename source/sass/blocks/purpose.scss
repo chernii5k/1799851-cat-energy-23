@@ -48,3 +48,7 @@
 .purpose__item:not(:last-child) {
   margin-bottom: 24px;
 }
+
+.purpose__item input:hover + label {
+  color: rgba(34, 34, 34, 0.3);
+}

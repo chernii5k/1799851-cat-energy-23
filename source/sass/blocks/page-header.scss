@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-bottom: 82px;
   }
 }
 
@@ -47,6 +48,14 @@
 .page-header__logo {
   margin: 0;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 174px;
@@ -54,7 +63,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 53px;
     width: 202px;
     height: auto;
   }
