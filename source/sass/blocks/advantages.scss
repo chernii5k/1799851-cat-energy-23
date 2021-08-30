@@ -38,26 +38,44 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
 
 .advantages__item {
-  padding-left: 100px;
+  position: relative;
+  padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 247px;
+    width: 230px;
+    height: 280px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    width: 230px;
+    height: 280px;
+  }
+}
+
+.advantages__item:nth-child(2n + 1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
 .advantages__slogan {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
@@ -66,6 +84,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 151px;
   }
 }
 
@@ -74,5 +93,117 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+  }
+}
+
+.advantages__item--leaflet::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../img/leaflet60.svg") no-repeat left;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background: url("../img/leaflet.svg") no-repeat left;
+    top: 40px;
+  }
+}
+
+.advantages__item--boiling-water::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../img/boiling-water60.svg") no-repeat left;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background: url("../img/boiling-water.svg") no-repeat left;
+    top: 40px;
+  }
+}
+
+.advantages__item--cutlery::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../img/cutlery60.svg") no-repeat left;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background: url("../img/cutlery.svg") no-repeat left;
+    top: 40px;
+  }
+}
+
+.advantages__item--time::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../img/time60.svg") no-repeat left;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background: url("../img/time.svg") no-repeat left;
+    top: 40px;
+  }
+}
+
+.advantages__item--one::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "1";
+    font-size: 280px;
+    line-height: 1;
+    right: 0;
+    color: $basic_grey;
+  }
+}
+
+.advantages__item--two::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "2";
+    font-size: 280px;
+    line-height: 1;
+    right: 0;
+    color: $basic_grey;
+  }
+}
+
+.advantages__item--three::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "3";
+    font-size: 280px;
+    line-height: 1;
+    right: 0;
+    color: $basic_grey;
+  }
+}
+
+.advantages__item--four::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "4";
+    font-size: 280px;
+    line-height: 1;
+    right: 0;
+    color: $basic_grey;
   }
 }

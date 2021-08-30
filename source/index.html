@@ -60,7 +60,7 @@
 
     navMain.classList.remove('main-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');
@@ -79,26 +79,25 @@
             Выбор программы: похудение или набор массы
           </h2>
           <ul class="programm-selection__list selection-list">
-            <li class="selection-list__item selection-list__item--homecat">
-              <h3 class="selection-list__title">
+            <li class="selection-list__item">
+              <h3 class="selection-list__title selection-list__title--slim">
                 Похудение
               </h3>
               <p class="selection-list__description">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
-                Slim
-                поможет вашему питомцу сбросить лишний вес.
+                Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="selection-list__link" href="#">
                 Каталог Slim
               </a>
             </li>
-            <li class="selection-list__item selection-list__item--wildcat">
-              <h3 class="selection-list__title">
+            <li class="selection-list__item">
+              <h3 class="selection-list__title selection-list__title--pro">
                 Набор массы
               </h3>
               <p class="selection-list__description">
-                Заработать авторитет среди дворовых котов и даже собак? Серия
-                Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
+                нарастить необходимые мышцы!
               </p>
               <a class="selection-list__link" href="#">
                 Каталог Pro
@@ -113,22 +112,22 @@
             Как это работает
           </h3>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--leaflet">
+            <li class="advantages__item advantages__item--leaflet advantages__item--one">
               <p class="advantages__slogan">
                 Функциональное питание<br> содержит только полезные<br> питательные вещества.
               </p>
             </li>
-            <li class="advantages__item advantages__item--boiling-water">
+            <li class="advantages__item advantages__item--boiling-water advantages__item--two">
               <p class="advantages__slogan">
                 Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.
               </p>
             </li>
-            <li class="advantages__item advantages__item--cutlery">
+            <li class="advantages__item advantages__item--cutlery advantages__item--three">
               <p class="advantages__slogan">
                 Замените один-два приема<br> обычной еды на наше<br> функциональное питание.
               </p>
             </li>
-            <li class="advantages__item advantages__item--time">
+            <li class="advantages__item advantages__item--time advantages__item--four">
               <p class="advantages__slogan">
                 Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!
               </p>
@@ -137,53 +136,60 @@
         </div>
       </section>
     </div>
-    <section class="live-example wrapper">
+    <section class="live-example">
       <div class="live-example__center">
-        <h2 class="live-example__title">
-          Живой пример
-        </h2>
-        <div class="live-example__container">
-          <div class="live-example__text-container">
-            <p class="live-example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
-              без
-              изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-          </div>
-          <div class="live-example__list-wrapper">
-            <dl class="live-example__list">
-              <div class="live-example__item">
-                <dt class="live-example__number">
-                  5кг
-                </dt>
-                <dd class="live-example__description">
-                  снижение<br> веса
-                </dd>
+        <div class="live-example__title-center wrapper">
+          <h2 class="live-example__title">
+            Живой пример
+          </h2>
+        </div>
+        <div class="live-example__background">
+          <div class="live-example__inner">
+            <div class="live-example__container wrapper">
+              <div class="live-example__text-container">
+                <p class="live-example__text">
+                  Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
+                  результат
+                  без
+                  изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+                </p>
               </div>
-              <div class="live-example__item">
-                <dt class="live-example__number">
-                  60 дней
-                </dt>
-                <dd class="live-example__description">
-                  затрачено<br> времени
-                </dd>
+              <div class="live-example__list-wrapper">
+                <dl class="live-example__list">
+                  <div class="live-example__item">
+                    <dt class="live-example__number live-example__border-weight">
+                      5кг
+                    </dt>
+                    <dd class="live-example__description">
+                      снижение веса
+                    </dd>
+                  </div>
+                  <div class="live-example__item">
+                    <dt class="live-example__number live-example__border-days">
+                      60 дней
+                    </dt>
+                    <dd class="live-example__description">
+                      затрачено времени
+                    </dd>
+                  </div>
+                </dl>
+                <p class="live-example__expenses">
+                  Затраты на питание: 15 000 РУБ.
+                </p>
               </div>
-            </dl>
-            <p class="live-example__expenses">
-              Затраты на питание: 15 000 РУБ.
-            </p>
-          </div>
-          <div class="live-example__cat-block">
-            <img class="live-example__picture" src="img/before-cat.png" width="311" height="232"
-              alt="Красивый, но толстый кот">
-            <div class="before-after">
-              <label class="before-after__label" for="fatcat">
-                Было
-              </label>
-              <input class="before-after__toggle" id="fatcat" type="range">
-              <label class="before-after__label" for="fatcat">
-                Стало
-              </label>
+              <div class="live-example__cat-block">
+                <img class="live-example__picture" src="img/before-cat.png" width="311" height="232"
+                  alt="Красивый, но толстый кот">
+                <div class="before-after">
+                  <label class="before-after__label" for="fatcat">
+                    Было
+                  </label>
+                  <input class="before-after__toggle" id="fatcat" type="range">
+                  <label class="before-after__label" for="fatcat">
+                    Стало
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
