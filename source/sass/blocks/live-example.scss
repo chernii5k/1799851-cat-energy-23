@@ -257,7 +257,6 @@
 
 .live-example__inner {
   @media (min-width: $desktop-width) {
-    width: 1260px;
-    margin: auto;
+    max-width: 1260px
   }
 }
