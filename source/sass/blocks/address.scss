@@ -1,6 +1,6 @@
 .address__center {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;

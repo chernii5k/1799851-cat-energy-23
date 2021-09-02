@@ -28,7 +28,7 @@
   padding-top: 39px;
   padding-left: 96px;
   padding-right: 96px;
-  padding-bottom: 52px;
+  padding-bottom: 32px;
 
   &:hover {
     opacity: 0.8;
@@ -44,7 +44,8 @@
 }
 
 .page-footer__social {
-  padding-bottom: 49px;
+  padding-top: 20px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

@@ -10,36 +10,52 @@
 
 <body class="page-body">
   <header class="page-header">
-    <div class="page-header__center wrapper">
+    <nav class="main-nav main-nav--closed main-nav--nojs wrapper">
       <a class="page-header__logo" href="index.html">
         <img src="img/logo-one.png" width="191" height="38" alt="Логотип Кэт Энерджи">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">
-            Открыть меню
-          </span></button>
-        <div class="main-nav__center">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--current-form">
+          <a class="site-list__link" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+
   <main class="page-main">
     <div class="wrapper">
       <form class="cat-data" method="GET" action="https://echo.htmlacademy.ru">
@@ -89,19 +105,19 @@
                 </legend>
                 <ul class="purpose__list">
                   <li class="purpose__item">
-                    <input class="purpose__radio" type="radio" name="purpose" id="slimming" value="slimming" checked>
+                    <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="slimming" value="slimming" checked>
                     <label for="slimming">
                       Похудение
                     </label>
                   </li>
                   <li class="purpose__item">
-                    <input class="purpose__radio" type="radio" name="purpose" id="weight-gain" value="weight-gain">
+                    <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="weight-gain" value="weight-gain">
                     <label for="weight-gain">
                       Набор массы
                     </label>
                   </li>
                   <li class="purpose__item">
-                    <input class="purpose__radio" type="radio" name="purpose" id="your-advice" value="your-advice">
+                    <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="your-advice" value="your-advice">
                     <label for="your-advice">
                       Не знаю (Нужен ваш совет)
                     </label>
@@ -148,25 +164,25 @@
             <div class="extra__center">
               <ul class="extra__list">
                 <li class="extra__item">
-                  <input class="extra__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                  <input class="extra__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
                   <label for="sweetener">
                     Сахарозаменитель
                   </label>
                 </li>
                 <li class="extra__item">
-                  <input class="extra__checkbox" type="checkbox" name="water" id="water">
+                  <input class="extra__checkbox visually-hidden" type="checkbox" name="water" id="water">
                   <label for="water">
                     Питьевая вода
                   </label>
                 </li>
                 <li class="extra__item">
-                  <input class="extra__checkbox" type="checkbox" name="milk" id="milk">
+                  <input class="extra__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
                   <label for="milk">
                     Молоко
                   </label>
                 </li>
                 <li class="extra__item">
-                  <input class="extra__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                  <input class="extra__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
                   <label for="vitamins">
                     Витамины
                   </label>
