@@ -69,16 +69,6 @@
   }
 }
 
-.owner-data input {
-  &:focus {
-    border: 2px solid $special_dark-grey;
-  }
-
-  &:invalid {
-    border: 2px solid $status_error;
-  }
-}
-
 .owner-data__email {
   margin: 0;
   width: 219px;

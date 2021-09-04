@@ -6,7 +6,7 @@
     justify-content: space-around;
     align-items: center;
     min-height: 201px;
-    background-color: $basic_grey;
+    background-color: $basic_white;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +17,6 @@
     left: 8%;
     top: 20%;
     z-index: 1;
-    background-color: $basic_white;
   }
 }
 

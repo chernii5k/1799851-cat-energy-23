@@ -65,19 +65,12 @@
   align-items: center;
 }
 
-.parameters__item input {
+.parameters__value[placeholder] {
   padding: 0;
-
-  &:focus {
-    border: 2px solid $special_dark-grey;
-  }
-
-  &:invalid {
-    border: 2px solid $status_error;
-  }
-}
-
-.parameters__item input[placeholder] {
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  text-align: left;
   font-size: 16px;
   line-height: 1.13;
   color: $special_dark-grey;
@@ -86,56 +79,5 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.45;
-  }
-}
-
-.parameters__name {
-  width: 100%;
-  border: 1px solid $special_grey5;
-}
-
-.parameters__weight {
-  width: 87%;
-  border: 1px solid $special_grey5;
-}
-
-.parameters__age {
-  width: 81%;
-  border: 1px solid $special_grey5;
-}
-
-.parameters__name[placeholder] {
-  padding: 13px 165px 14px 15px;
-
-  @media (min-width: $tablet-width) {
-    padding: 10px 487px 11px 18.5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 10px 424px 11px 20px;
-  }
-}
-
-.parameters__weight[placeholder] {
-  padding: 13px 181px 14px 16px;
-
-  @media (min-width: $tablet-width) {
-    padding: 13px 181px 14.5px 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 10px 448px 11px 19px;
-  }
-}
-
-.parameters__age[placeholder] {
-  padding: 13px 149px 14px 16px;
-
-  @media (min-width: $tablet-width) {
-    padding: 13px 149px 14px 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 10px 411px 11px 17px;
   }
 }

@@ -131,19 +131,19 @@
 .extra__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: -6px;
-  left: -32px;
-  width: 14px;
+  top: -5px;
+  left: -31px;
+  width: 12px;
   height: 18px;
   border: solid $basic_green;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  transform: rotate(45deg) skewX(5deg);
 
   @media (min-width: $tablet-width) {
-    width: 18.5px;
+    width: 14px;
     height: 24px;
-    top: -6px;
-    left: -46px;
+    top: -4px;
+    left: -43px;
   }
 }
 
