@@ -61,9 +61,24 @@
 
 .parameters__item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+.parameters__value {
   flex-grow: 1;
+}
+
+.parameters__item:nth-child(1) label {
+  margin-right: 15px;
+}
+
+.parameters__item:nth-child(2) label {
+  margin-right: 6px;
+}
+
+.parameters__item:nth-child(3) label {
+  white-space: nowrap;
 }
 
 .parameters__value[placeholder] {
