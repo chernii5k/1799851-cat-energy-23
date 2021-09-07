@@ -1,8 +1,18 @@
 .live-example {
   background-color: $special_dark-grey3;
+  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
     background-color: $basic_white;
+    margin: 0;
+    padding-top: 43px;
+    border-top: 1px solid $special_grey6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -37,6 +47,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 0;
+    overflow: visible;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,20 +70,6 @@
 
   @media (min-width: $desktop-width) {
     position: static;
-  }
-}
-
-.live-example__center {
-  margin-top: 42px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding-top: 43px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    padding: 0;
   }
 }
 

@@ -58,78 +58,69 @@
 
   <main class="page-main">
     <div class="wrapper">
+      <h1 class="cat-data__title">
+        Подбор программы
+      </h1>
+      <p class="cat-data__subtitle">
+        Заполните анкету, и мы подберем<br> программу питания для вашего кота
+      </p>
       <form class="cat-data" method="GET" action="https://echo.htmlacademy.ru">
-        <div class="cat-data__center">
-          <header class="cat-data__header">
-            <h1 class="cat-data__title">
-              Подбор программы
-            </h1>
-            <p class="cat-data__subtitle">
-              Заполните анкету, и мы подберем<br> программу питания для вашего кота
-            </p>
-          </header>
-          <div class="cat-data__entry-field parameters purpose">
-            <div class="parameters__center">
-              <fieldset class="parameters__content">
-                <legend class="visually-hidden">
-                  Параметры кота
-                </legend>
-                <ul class="parameters__list">
-                  <li class="parameters__item">
-                    <label class="parameters__category" for="cat-name">
-                      Имя:*
-                    </label>
-                    <input class="parameters__value" name="parameters-name" type="text" id="cat-name"
-                      placeholder="Барсик">
-                  </li>
-                  <li class="parameters__item">
-                    <label class="parameters__category" for="cat-weight">
-                      Вес (кг):*
-                    </label>
-                    <input class="parameters__value" name="parameters-weight" type="number" id="cat-weight"
-                      placeholder="7">
-                  </li>
-                  <li class="parameters__item">
-                    <label class="parameters__category cattt" for="cat-age">
-                      Возраст (лет):
-                    </label>
-                    <input class="parameters__value" name="parameters-age" type="number" id="cat-age" placeholder="7">
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="purpose__center">
-              <fieldset class="purpose__content">
-                <legend class="visually-hidden">
-                  Цель программы
-                </legend>
-                <ul class="purpose__list">
-                  <li class="purpose__item">
-                    <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="slimming" value="slimming" checked>
-                    <label for="slimming">
-                      Похудение
-                    </label>
-                  </li>
-                  <li class="purpose__item">
-                    <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="weight-gain" value="weight-gain">
-                    <label for="weight-gain">
-                      Набор массы
-                    </label>
-                  </li>
-                  <li class="purpose__item">
-                    <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="your-advice" value="your-advice">
-                    <label for="your-advice">
-                      Не знаю (Нужен ваш совет)
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-          </div>
-        </div>
+        <fieldset class="parameters__content">
+          <legend class="visually-hidden">
+            Параметры кота
+          </legend>
+          <ul class="parameters__list">
+            <li class="parameters__item">
+              <label class="parameters__category" for="cat-name">
+                Имя:*
+              </label>
+              <input class="parameters__value" name="parameters-name" type="text" id="cat-name" placeholder="Барсик">
+            </li>
+            <li class="parameters__item">
+              <label class="parameters__category" for="cat-weight">
+                Вес (кг):*
+              </label>
+              <input class="parameters__value" name="parameters-weight" type="number" id="cat-weight" placeholder="7">
+            </li>
+            <li class="parameters__item">
+              <label class="parameters__category cattt" for="cat-age">
+                Возраст (лет):
+              </label>
+              <input class="parameters__value" name="parameters-age" type="number" id="cat-age" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="purpose__content">
+          <legend class="visually-hidden">
+            Цель программы
+          </legend>
+          <ul class="purpose__list">
+            <li class="purpose__item">
+              <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="slimming" value="slimming"
+                checked>
+              <label for="slimming">
+                Похудение
+              </label>
+            </li>
+            <li class="purpose__item">
+              <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="weight-gain"
+                value="weight-gain">
+              <label for="weight-gain">
+                Набор массы
+              </label>
+            </li>
+            <li class="purpose__item">
+              <input class="purpose__radio visually-hidden" type="radio" name="purpose" id="your-advice"
+                value="your-advice">
+              <label for="your-advice">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
         <div class="cat-data__contact-details owner-data">
           <h2 class="owner-data__title">
-            Контактные данные<br> (владельца кота)
+            Контактные данные (владельца кота)
           </h2>
           <div class="owner-data__center">
             <ul class="owner-data__list">
@@ -137,15 +128,15 @@
                 <label for="email">
                   E-mail:*
                 </label>
-                <input class="owner-data__email" type="email" id="email" name="E-mail"
+                <input class="owner-data__value owner-data__email" type="email" id="email" name="E-mail"
                   placeholder="kuklachev@gmail.com">
               </li>
               <li class="owner-data__item">
                 <label for="tel">
                   Телефон:*
                 </label>
-                <input class="owner-data__tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90"
-                  pattern="8[0-9]{3}[0-9]{3}[0-9]{4}">
+                <input class="owner-data__value owner-data__tel" type="tel" id="tel" name="tel"
+                  placeholder="8 (960) 900-60-90" pattern="8[0-9]{3}[0-9]{3}[0-9]{4}">
               </li>
             </ul>
           </div>
@@ -164,7 +155,8 @@
             <div class="extra__center">
               <ul class="extra__list">
                 <li class="extra__item">
-                  <input class="extra__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                  <input class="extra__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener"
+                    checked>
                   <label for="sweetener">
                     Сахарозаменитель
                   </label>
@@ -207,7 +199,7 @@
         Мы находимся
       </h2>
       <div class="location__center address">
-        <div class="address__center">
+        <div class="address__center adress--bg">
           <h3 class="address__title">
             Приглашаем<br> к сотрудничеству<br> дилеров!
           </h3>

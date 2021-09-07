@@ -4,11 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid $special_grey4;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

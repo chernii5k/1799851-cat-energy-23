@@ -1,11 +1,12 @@
 @media (min-width: $tablet-width) {
-  .advantages__center {
+  .advantages {
     padding-top: 15px;
+    padding-bottom: 47px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .advantages__center {
+  .advantages {
     margin: 0 auto;
     padding: 0;
     margin-bottom: 11px;

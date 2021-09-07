@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    grid-column: 1/3;
   }
 }
 
@@ -66,34 +67,69 @@
 }
 
 .parameters__value {
-  flex-grow: 1;
-}
-
-.parameters__item:nth-child(1) label {
-  margin-right: 15px;
-}
-
-.parameters__item:nth-child(2) label {
-  margin-right: 6px;
-}
-
-.parameters__item:nth-child(3) label {
-  white-space: nowrap;
-}
-
-.parameters__value[placeholder] {
   padding: 0;
   padding-top: 13px;
   padding-bottom: 14px;
   padding-left: 15px;
   text-align: left;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.13;
   color: $special_dark-grey;
   text-transform: uppercase;
+  flex-grow: 1;
+  width: 100px;
+  border: 1px solid $special_grey5;
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.45;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+  }
+}
+
+.parameters__item:nth-child(1) label {
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 13px;
+  }
+}
+
+.parameters__item:nth-child(2) label {
+  margin-right: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 13px;
+  }
+}
+
+.parameters__item:nth-child(3) label {
+  white-space: nowrap;
+  margin-right: 14px;
 }

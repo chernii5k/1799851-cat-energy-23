@@ -152,10 +152,6 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
@@ -177,15 +173,32 @@
   height: 12px;
   top: 45px;
   left: 120px;
-  background: url("../img/arrow.png") no-repeat center;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='12' viewBox='0 0 24 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
-    top: 60px;
+    top: 58px;
     left: 175px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 35px;
-    left: 185px;
+    top: 33px;
+    left: 180px;
+  }
+}
+
+.selection-list__link::after {
+  position: absolute;
+  content: "";
+  width: 240px;
+  height: 1px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $special_grey4;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

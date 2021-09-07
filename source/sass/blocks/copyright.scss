@@ -2,16 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid $special_grey4;
+
 
   @media (min-width: $tablet-width) {
+    border-top: none;
     width: auto;
     justify-content: space-between;
+    padding: 0;
   }
 }
 
 .copyright__link {
-  padding-bottom: 32px;
-  padding-right: 140px;
+  padding-right: 160px;
   text-decoration: none;
   font-size: 16px;
   line-height: 1.13;
@@ -26,7 +31,6 @@
 }
 
 .copyright__logo {
-  padding-bottom: 22px;
 
   &:hover {
     filter: invert(50%) sepia(96%) saturate(315%) hue-rotate(54deg) brightness(103%) contrast(92%);

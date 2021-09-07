@@ -26,9 +26,10 @@
 
 .page-footer__logo {
   padding-top: 39px;
-  padding-left: 96px;
-  padding-right: 96px;
+  padding-left: 76px;
+  padding-right: 76px;
   padding-bottom: 32px;
+  border-bottom: 1px solid $special_grey4;
 
   &:hover {
     opacity: 0.8;
@@ -40,6 +41,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border-bottom: none;
   }
 }
 

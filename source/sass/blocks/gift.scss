@@ -1,4 +1,5 @@
 .gift__center {
+  position: relative;
   width: 280px;
   height: 289px;
   margin-top: 24px;
@@ -8,7 +9,6 @@
 }
 
 .gift__description {
-  position: relative;
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
@@ -19,9 +19,10 @@
   text-align: center;
 }
 
-.gift__description::before {
+.gift__center::before {
   position: absolute;
   content: "";
+  order: 2;
   left: 50%;
   transform: translateX(-50%);
   background: url("../img/icon_gift.svg") no-repeat center;
