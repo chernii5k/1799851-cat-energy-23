@@ -1,14 +1,5 @@
-.gift__center {
-  position: relative;
-  width: 280px;
-  height: 289px;
-  margin-top: 24px;
-  margin-bottom: 35px;
-  background: url("../img/gift-photo.jpg") no-repeat center;
-  background-size: 280px 289px;
-}
-
 .gift__description {
+  position: relative;
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
@@ -17,9 +8,15 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+  width: 280px;
+  height: 289px;
+  margin-top: 24px;
+  margin-bottom: 35px;
+  background: url("../img/gift-photo.jpg") no-repeat center;
+  background-size: 280px 289px;
 }
 
-.gift__center::before {
+.gift__description::before {
   position: absolute;
   content: "";
   order: 2;

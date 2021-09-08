@@ -60,9 +60,13 @@
     content: "";
     width: 20px;
     height: 2px;
-    left: 0;
+    left: -30px;
     top: 22px;
     background: $basic_green no-repeat left;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -20px;
   }
 }
 
