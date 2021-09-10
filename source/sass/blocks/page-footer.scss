@@ -18,10 +18,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    background-color: $basic_grey;
-  }
+.page-footer {
+  background-color: $basic_grey;
 }
 
 .page-footer__logo {

@@ -7,3 +7,13 @@
 *:focus {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+// * {
+//   --out-width: 2px;
+//   outline: var(--out-width) solid red;
+//   outline-offset: calc(0px - var(--out-width));
+//   &::before, &::after {
+//     outline: var(--out-width) solid lime;
+//     outline-offset: calc(0px - var(--out-width));
+//   }
+// }

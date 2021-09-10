@@ -1,41 +1,10 @@
-.extra {
-  @media (min-width: $tablet-width) {
-    margin-top: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 0;
-  }
-}
-
-.extra__content {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-@media (min-width: $tablet-width) {
-  .extra__center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 72px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .extra__center {
-    margin-bottom: 82px;
-  }
-}
-
 .extra__title {
   position: relative;
   margin: 0;
   font-size: 24px;
   line-height: 1.1;
   font-weight: 400;
+  margin-top: 22.5px;
   margin-bottom: 34px;
   color: $basic_black;
 
@@ -43,6 +12,14 @@
     margin-bottom: 62px;
     font-size: 36px;
     line-height: 1;
+    margin-top: 65px;
+    grid-column: 1/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+    grid-column: 1/5;
   }
 }
 
@@ -51,19 +28,19 @@
   content: "";
   width: 136px;
   height: 2px;
-  right: -155px;
+  right: -20px;
   top: 16px;
   background: $basic_green no-repeat right;
 
   @media (min-width: $tablet-width) {
-    width: 446px;
-    right: -523px;
+    width: 487px;
+    right: -30px;
     top: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1038px;
-    right: -1064px;
+    width: 1052px;
+    right: -80px;
   }
 }
 
@@ -71,30 +48,31 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
-    width: 20px;
+    width: 15px;
     height: 2px;
-    left: -30px;
+    left: -29px;
     top: 22px;
     background: $basic_green no-repeat right;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -80px;
+    width: 61px;
   }
 }
 
 .extra__list {
   margin: 0;
-  margin-left: 46px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 59px;
+    grid-column: 1/3;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100%;
-    margin-bottom: 66px;
+    grid-column: 1/5;
   }
 }
 
@@ -104,7 +82,7 @@
 
 @media (min-width: $tablet-width) {
   .extra__item:nth-child(2n + 1) {
-    margin-right: 183px;
+    margin-right: 188px;
   }
 
   .extra__item:nth-child(odd) {
@@ -132,7 +110,8 @@
 
 .extra__item label {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-size: 16px;
   line-height: 1.13;
@@ -147,13 +126,13 @@
 
 .extra__checkbox + label::before {
   content: "";
-  position: absolute;
+  display: block;
   width: 30px;
   height: 30px;
   top: -7px;
   left: -40px;
+  margin-right: 19px;
   border: 1px solid $special_grey;
-  background-color: $basic_white;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -162,25 +141,24 @@
   }
 }
 
-.extra__checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -31px;
-  width: 12px;
-  height: 18px;
-  border: solid $basic_green;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg) skewX(5deg);
+.extra__checkbox:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 17.718L5.3 11.2695L4.25 12.4574L11 20.0938L22.25 7.36648L21.2 6.09375L11 17.718Z' fill='%2368B738'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    width: 14px;
-    height: 24px;
-    top: -4px;
-    left: -43px;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 19.499L2.4 10.901L1 12.4848L10 22.6667L25 5.69697L23.6 4L10 19.499Z' fill='%2368B738'/%3E%3C/svg%3E%0A");
   }
 }
 
 .extra__item input:disabled + label {
   color: rgba(34, 34, 34, 0.3);
+}
+
+.extra__checkbox:hover + label::before {
+  border: 1px solid $basic_grey2;
+}
+
+.extra__checkbox + label {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

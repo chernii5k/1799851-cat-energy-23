@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs wrapper">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo-one.png" width="191" height="38" alt="Логотип Кэт Энерджи">
+        <img src="img/logo-one.svg" width="191" height="38" alt="Логотип Кэт Энерджи">
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">
@@ -118,80 +123,62 @@
             </li>
           </ul>
         </fieldset>
-        <div class="cat-data__contact-details owner-data">
-          <h2 class="owner-data__title">
-            Контактные данные (владельца кота)
-          </h2>
-          <div class="owner-data__center">
-            <ul class="owner-data__list">
-              <li class="owner-data__item">
-                <label for="email">
-                  E-mail:*
-                </label>
-                <input class="owner-data__value owner-data__email" type="email" id="email" name="E-mail"
-                  placeholder="kuklachev@gmail.com">
-              </li>
-              <li class="owner-data__item">
-                <label for="tel">
-                  Телефон:*
-                </label>
-                <input class="owner-data__value owner-data__tel" type="tel" id="tel" name="tel"
-                  placeholder="8 (960) 900-60-90" pattern="8[0-9]{3}[0-9]{3}[0-9]{4}">
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="cat-data__comment comment">
-          <h2 class="comment__title">
-            Комментарий
-          </h2>
-          <textarea class="comment__desc" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
-        <div class="cat-data__additionally extra">
-          <fieldset class="extra__content">
-            <legend class="extra__title">
-              Дополнительно
-            </legend>
-            <div class="extra__center">
-              <ul class="extra__list">
-                <li class="extra__item">
-                  <input class="extra__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener"
-                    checked>
-                  <label for="sweetener">
-                    Сахарозаменитель
-                  </label>
-                </li>
-                <li class="extra__item">
-                  <input class="extra__checkbox visually-hidden" type="checkbox" name="water" id="water">
-                  <label for="water">
-                    Питьевая вода
-                  </label>
-                </li>
-                <li class="extra__item">
-                  <input class="extra__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
-                  <label for="milk">
-                    Молоко
-                  </label>
-                </li>
-                <li class="extra__item">
-                  <input class="extra__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                  <label for="vitamins">
-                    Витамины
-                  </label>
-                </li>
-              </ul>
-              <div class="extra__request-send request">
-                <button class="button request__button" type="submit">
-                  Отправить заявку
-                </button>
-                <small class="request__necessarily">
-                  * — Обязательные поля
-                </small>
-              </div>
-            </div>
-          </fieldset>
-        </div>
-
+        <h2 class="owner-data__title">
+          Контактные данные (владельца кота)
+        </h2>
+        <ul class="owner-data__list">
+          <li class="owner-data__item">
+            <label for="email">
+              E-mail:*
+            </label>
+            <input class="owner-data__value owner-data__email" type="email" id="email" name="E-mail"
+              placeholder="kuklachev@gmail.com">
+          </li>
+          <li class="owner-data__item">
+            <label for="tel">
+              Телефон:*
+            </label>
+            <input class="owner-data__value owner-data__tel" type="tel" id="tel" name="tel"
+              placeholder="8 (960) 900-60-90" pattern="8[0-9]{3}[0-9]{3}[0-9]{4}">
+          </li>
+        </ul>
+        <h2 class="comment__title">
+          Комментарий
+        </h2>
+        <textarea class="comment__desc" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <legend class="extra__title">
+          Дополнительно
+        </legend>
+        <p class="extra__item">
+          <input class="extra__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+          <label for="sweetener">
+            Сахарозаменитель
+          </label>
+        </p>
+        <p class="extra__item">
+          <input class="extra__checkbox visually-hidden" type="checkbox" name="water" id="water">
+          <label for="water">
+            Питьевая вода
+          </label>
+        </p>
+        <p class="extra__item">
+          <input class="extra__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+          <label for="milk">
+            Молоко
+          </label>
+        </p>
+        <p class="extra__item">
+          <input class="extra__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+          <label for="vitamins">
+            Витамины
+          </label>
+        </p>
+        <button class="button request__button" type="submit">
+          Отправить заявку
+        </button>
+        <p class="request__necessarily">
+          * — Обязательные поля
+        </p>
       </form>
     </div>
     <section class="location">
