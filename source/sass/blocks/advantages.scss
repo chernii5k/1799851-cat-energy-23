@@ -99,109 +99,74 @@
 
 .advantages__item--leaflet::after {
   position: absolute;
-  content: "";
+  content: url("../../img/icon_leaf.png");
   width: 60px;
   height: 60px;
-  background: url("../img/leaflet60.svg") no-repeat left;
+  background: $basic_green no-repeat left;
   top: -5px;
   left: 0;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    background: url("../img/leaflet.svg") no-repeat left;
     top: 40px;
   }
 }
 
 .advantages__item--boiling-water::after {
   position: absolute;
-  content: "";
+  content: url("../../img/icon_tub.png");
   width: 60px;
   height: 60px;
-  background: url("../img/boiling-water60.svg") no-repeat left;
+  background: $basic_green no-repeat left;
   top: -5px;
   left: 0;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    background: url("../img/boiling-water.svg") no-repeat left;
     top: 40px;
   }
 }
 
 .advantages__item--cutlery::after {
   position: absolute;
-  content: "";
+  content: url("../../img/icon_eat.png");
   width: 60px;
   height: 60px;
-  background: url("../img/cutlery60.svg") no-repeat left;
+  background: $basic_green no-repeat left;
   top: -5px;
   left: 0;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    background: url("../img/cutlery.svg") no-repeat left;
     top: 40px;
   }
 }
 
 .advantages__item--time::after {
   position: absolute;
-  content: "";
+  content: url("../../img/icon_alarm.png");
   width: 60px;
   height: 60px;
-  background: url("../img/time60.svg") no-repeat left;
   top: -5px;
   left: 0;
+  background: $basic_green no-repeat left;
+
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    background: url("../img/time.svg") no-repeat left;
     top: 40px;
   }
 }
 
-.advantages__item--one::before {
+.advantages__item--number::before {
   @media (min-width: $tablet-width) {
     position: absolute;
-    content: "1";
-    font-size: 280px;
-    line-height: 1;
-    right: 0;
-    color: $basic_grey;
-  }
-}
-
-.advantages__item--two::before {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "2";
-    font-size: 280px;
-    line-height: 1;
-    right: 0;
-    color: $basic_grey;
-  }
-}
-
-.advantages__item--three::before {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "3";
-    font-size: 280px;
-    line-height: 1;
-    right: 0;
-    color: $basic_grey;
-  }
-}
-
-.advantages__item--four::before {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "4";
+    counter-increment: number;
+    content: counter(number);
     font-size: 280px;
     line-height: 1;
     right: 0;

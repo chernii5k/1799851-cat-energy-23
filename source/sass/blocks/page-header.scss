@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid $special_grey4;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -16,6 +15,14 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     margin-bottom: 82px;
+  }
+}
+
+.page-header--border {
+  border-bottom: 1px solid $special_grey4;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
   }
 }
 

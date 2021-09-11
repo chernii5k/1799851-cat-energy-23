@@ -103,16 +103,8 @@
   }
 }
 
-.catalog__item:last-child {
-  padding-bottom: 25px;
-
-  @media (min-width: $tablet-width) {
-    border: 2px solid $basic_grey;
-  }
-}
-
 @media (min-width: $tablet-width) {
-  .catalog__item:not(:last-child) {
+  .catalog__item {
     background-color: $basic_grey;
   }
 }

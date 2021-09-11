@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   padding-top: 186px;
+  margin-top: 23px;
+  margin-bottom: 35px;
   color: $basic_white;
   font-size: 16px;
   line-height: 1.25;
@@ -12,6 +14,16 @@
   height: 289px;
   background: url("../img/gift-photo.jpg") no-repeat center;
   background-size: 280px 289px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-left: 79px;
+  }
 }
 
 .gift__description::before {

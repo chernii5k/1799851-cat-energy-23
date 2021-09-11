@@ -1,3 +1,22 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $basic_grey;
+    width: 324px;
+    height: 430px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 431px;
+  }
+}
+
 .show-more__title {
   margin: 0 auto;
   position: relative;
