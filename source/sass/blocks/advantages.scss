@@ -99,10 +99,11 @@
 
 .advantages__item--leaflet::after {
   position: absolute;
-  content: url("../../img/icon_leaf.png");
+  content: "";
   width: 60px;
   height: 60px;
-  background: $basic_green no-repeat left;
+  background: $basic_green no-repeat center;
+  background-image: url("../img/icon_leaf.png");
   top: -5px;
   left: 0;
 
@@ -115,10 +116,11 @@
 
 .advantages__item--boiling-water::after {
   position: absolute;
-  content: url("../../img/icon_tub.png");
+  content: "";
   width: 60px;
   height: 60px;
-  background: $basic_green no-repeat left;
+  background: $basic_green no-repeat center;
+  background-image: url("../img/icon_tub.png");
   top: -5px;
   left: 0;
 
@@ -131,10 +133,11 @@
 
 .advantages__item--cutlery::after {
   position: absolute;
-  content: url("../../img/icon_eat.png");
+  content: "";
   width: 60px;
   height: 60px;
-  background: $basic_green no-repeat left;
+  background: $basic_green no-repeat center;
+  background-image: url("../img/icon_eat.png");
   top: -5px;
   left: 0;
 
@@ -147,12 +150,13 @@
 
 .advantages__item--time::after {
   position: absolute;
-  content: url("../../img/icon_alarm.png");
+  content: "";
   width: 60px;
   height: 60px;
   top: -5px;
   left: 0;
-  background: $basic_green no-repeat left;
+  background: $basic_green no-repeat center;
+  background-image: url("../img/icon_alarm.png");
 
 
   @media (min-width: $tablet-width) {
