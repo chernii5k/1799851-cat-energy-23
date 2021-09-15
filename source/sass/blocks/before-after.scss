@@ -69,11 +69,11 @@
 
 .before-after__toggle {
   &:hover {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
   }
 
   &:active {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
     border: 1px solid $basic_green;
   }
 
@@ -88,7 +88,7 @@
     background: $basic_white no-repeat;
     border: 1px solid $special_grey;
     border-radius: 50%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.16);
   }
 
   @media (min-width: $desktop-width) {
