@@ -8,7 +8,7 @@
 @media (min-width: $desktop-width) {
   .additional-goods {
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr min-content;
     margin-bottom: 86px;
   }
 }
@@ -93,7 +93,6 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 896px;
   }
 }
 
@@ -110,15 +109,15 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 26px 38px 28px 38px;
     border-bottom: 1px solid $special_grey4;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr min-content;
     padding-left: 0;
     padding-right: 0;
   }
