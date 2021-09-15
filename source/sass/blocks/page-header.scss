@@ -19,18 +19,11 @@
   }
 }
 
-.page-header--border::after {
-  position: absolute;
-  content: "";
-  width: 200vw;
-  height: 1px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  background: $special_grey4;
+.page-header--border {
+  border-bottom: 1px solid $special_grey4;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    border-bottom: none;
   }
 }
 
