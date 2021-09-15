@@ -25,7 +25,7 @@
 .catalog__title::after {
   position: absolute;
   content: "";
-  width: 328px;
+  width: 200vw;
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
@@ -85,7 +85,7 @@
 .catalog__item::after {
   position: absolute;
   content: "";
-  width: 328px;
+  width: 200vw;
   height: 1px;
   left: 50%;
   transform: translateX(-50%);

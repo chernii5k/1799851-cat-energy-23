@@ -25,14 +25,12 @@
 .purpose__content::after {
   position: absolute;
   content: "";
-  width: 320px;
+  width: 200vw;
   height: 1px;
   left: 50%;
-  bottom: -5px;
+  bottom: 0;
   transform: translateX(-50%);
   background-color: $special_grey4;
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -42,14 +40,12 @@
 .purpose__content::before {
   position: absolute;
   content: "";
-  width: 320px;
+  width: 200vw;
   height: 1px;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
   background-color: $special_grey4;
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: $tablet-width) {
     display: none;

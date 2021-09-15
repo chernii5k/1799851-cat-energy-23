@@ -96,22 +96,22 @@
           Как это работает
         </h3>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--leaflet advantages__item--number">
+          <li class="advantages__item advantages__item--leaflet">
             <p class="advantages__slogan">
               Функциональное питание<br> содержит только полезные<br> питательные вещества.
             </p>
           </li>
-          <li class="advantages__item advantages__item--boiling-water advantages__item--number">
+          <li class="advantages__item advantages__item--boiling-water">
             <p class="advantages__slogan">
               Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.
             </p>
           </li>
-          <li class="advantages__item advantages__item--cutlery advantages__item--number">
+          <li class="advantages__item advantages__item--cutlery">
             <p class="advantages__slogan">
               Замените один-два приема<br> обычной еды на наше<br> функциональное питание.
             </p>
           </li>
-          <li class="advantages__item advantages__item--time advantages__item--number">
+          <li class="advantages__item advantages__item--time">
             <p class="advantages__slogan">
               Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!
             </p>
@@ -155,20 +155,24 @@
               </div>
             </dl>
             <p class="live-example__expenses">
-              Затраты на питание: 15 000 РУБ.
+              Затраты на питание: <span class="live-example__expenses--indent">15 000 РУБ.</span>
             </p>
           </div>
           <div class="live-example__cat-block">
             <img class="live-example__picture" src="img/before-cat.png" width="280" height="232"
               alt="Красивый, но толстый кот">
             <div class="before-after">
-              <label class="before-after__label" for="fatcat">
+              <p class="before-after__label" for="fatcat">
                 Было
-              </label>
-              <input class="before-after__toggle visually-hidden" id="fatcat" type="range">
-              <label class="before-after__label" for="fatcat">
+              </p>
+              <div class="before-after__range">
+                <div class="before-after__toggle">
+                  <div class="before-after__inside"></div>
+                </div>
+              </div>
+              <p class="before-after__label" for="fatcat">
                 Стало
-              </label>
+              </p>
             </div>
           </div>
         </div>

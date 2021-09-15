@@ -64,10 +64,11 @@
 .additional-goods__title::before {
   position: absolute;
   content: "";
-  width: 320px;
+  width: 200vw;
   height: 1px;
   top: 0;
-  left: 3px;
+  left: 50%;
+  transform: translateX(-50%);
   background: $special_grey2;
 
   @media (min-width: $tablet-width) {

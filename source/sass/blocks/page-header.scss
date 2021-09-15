@@ -1,11 +1,13 @@
 .page-header {
   position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    overflow: visible;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,11 +20,18 @@
   }
 }
 
-.page-header--border {
-  border-bottom: 1px solid $special_grey4;
+.page-header--border::after {
+  position: absolute;
+  content: "";
+  width: 200vw;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: $special_grey4;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
+    display: none;
   }
 }
 
